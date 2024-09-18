@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Chargement des données
-df = pd.read_excel('/Users/paulsocheleau/Documents/stage/Stage_Paul/ANALYSE/06:08:2024/Plot_CT/Valeurs_microgliamorphologie.xlsx')
+df = pd.read_excel('/Users/paulsocheleau/Documents/stage/Stage_Paul/ANALYSE/06:08:2024/Plot_CT/Microglia_morphométrie.xlsx')
 
 # Calcul des moyennes par condition et réplicat
 df_means = df.groupby(['Conditions', 'Replica'])['Roundness'].mean().reset_index()
